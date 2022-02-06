@@ -1,0 +1,66 @@
+.mainResume {
+    background-color: #17202a;
+    /* height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    border-radius: 50px; */
+}
+
+.mainResume1 {
+    text-align: center;
+    background-color: #17202a;   
+}
+.mainResume2 {
+    text-align: center;
+    background-color: #17202a;
+    height: 50vh;
+    margin-top: 100vh;
+}
+.mainResume3 {
+    /* text-align: center; */
+    background-color: #17202a;
+    height: 100vh;
+
+    color: aliceblue;
+}
+#video {
+    position:absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+.App{
+    text-align: center;
+    text-align: center;
+}
+.App .text-wrapper{
+    padding: 5px;
+    display: inline-block;
+    
+    border: 2px solid white; 
+    border-radius: 20px;
+}
+.App .text-wrapper h1 {
+    color: white;
+    display: inline-block;   
+    z-index: 1;
+    border-radius: 5px;
+}
+.text-wrapper {
+    color: white;
+    width: 65%;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+    z-index: 1;
+}
+.Typography{
+    height: 100vh;
+    text-align: center;
+}
+

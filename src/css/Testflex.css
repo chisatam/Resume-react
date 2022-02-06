@@ -1,0 +1,16 @@
+.flexbox{
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.item{
+    /* display: block;
+    box-sizing: border-box;
+    width: 33.33%; */
+}
+.content{
+    background-color: rgb(36, 31, 112);
+    padding: 16px;
+    color: white;
+    text-align: center;
+}
