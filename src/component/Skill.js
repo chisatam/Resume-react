@@ -11,6 +11,8 @@ import {
 } from "@devexpress/dx-react-chart-material-ui";
 import { Animation } from "@devexpress/dx-react-chart";
 import { padding } from "@mui/system";
+import { AreaSeries } from '@devexpress/dx-react-chart';
+
 const consumptionColor = "#41c0f0";
 
 const makeLabel =
@@ -31,14 +33,15 @@ const LabelWithThousand = makeLabel("", consumptionColor);
 export default function Skill() {
     const data = [
         { year: "Cs", population: 2.5 },
-        { year: "C", population: 3 },
         { year: "M", population: 3 },
+        { year: "C", population: 3 },
+        { year: "H", population: 2.5 },
         { year: "R", population: 4 },
     ];
     return (
         <div>
-            <Grid container display="flex" textAlign="center">
-                <Grid item xs={12} sm={6} md={6}>
+            <Grid container display="flex" textAlign="left">
+                <Grid item={true} xs={12} sm={12} md={6}>
                     <Grid>
                         <Typography
                             variant="subtitle2"
@@ -47,30 +50,19 @@ export default function Skill() {
                             sx={{
                                 flexGrow: 1,
                                 fontSize: { xs: "10px", md: "15px" },
-                                width: { xs: "90%", md: "80%" },
+                                width: { xs: "50%",sm:"60%", md: "70%" },
                                 padding: "10px 20px",
+                                paddingLeft: "100px",
                                 color: "#FFF",
                             }}
                         >
                             <h1>MY SKILLS</h1>
                             <p>
-                                What is Lorem Ipsum? Lorem Ipsum is simply dummy
-                                text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard
-                                dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it
-                                to make a type specimen book. It has survived
-                                not only five centuries, but also the leap into
-                                electronic typesetting, remaining essentially
-                                unchanged What is Lorem Ipsum? Lorem Ipsum is
-                                simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the
-                                1500s, when an unknown printer took a galley of
-                                type and scrambled it to make a type specimen
-                                book. It has survived not only five centuries,
-                                but also the leap into electronic typesetting,
-                                remaining essentially unchanged.
+                                The skills in web applications are part of the
+                                languages I've used, Display Languages are my
+                                primary working language. And there are many
+                                Computer or tools that I can use. And I can
+                                learn tools to improve my skills.
                             </p>
                         </Typography>
                     </Grid>
@@ -79,79 +71,102 @@ export default function Skill() {
                     container
                     display="flex"
                     textAlign="center"
-                    alignItems="center"
-                    xs={2}
-                    sm={1}
-                    md={1}
+                    flexDirection="column"
+                    justifyContent="space-between"
                     style={{ color: "white" }}
+                    width="73px"
                 >
-                    <Grid item xs={12}>
+                    <Grid item xs={2} sm={1} md={1}>
                         <Typography
                             variant="subtitle2"
                             component="div"
                             gutterBottom
                             sx={{
                                 flexGrow: 1,
-                                fontSize: { xs: "5px", sm: "7px", md: "10px" },
+                                fontSize: { xs: "5px", sm: "7px", md: "8px" },
                                 width: { xs: "80%", md: "80%" },
                                 padding: "5px 20px",
                                 color: "#FFF",
+                                paddingTop: "35px",
                             }}
                         >
                             <h1>React</h1>
                         </Typography>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={2} sm={1} md={1}>
                         <Typography
                             variant="subtitle2"
                             component="div"
                             gutterBottom
                             sx={{
                                 flexGrow: 1,
-                                fontSize: { xs: "5px", sm: "7px", md: "10px" },
+                                fontSize: { xs: "5px", sm: "7px", md: "8px" },
                                 width: { xs: "80%", md: "80%" },
                                 padding: "5px 20px",
                                 color: "#FFF",
+                                paddingTop: { xs: "35px", md: "0px" },
+                               
+                            }}
+                        >
+                            <h1>HTML</h1>
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={2} sm={1} md={1}>
+                        <Typography
+                            variant="subtitle2"
+                            component="div"
+                            gutterBottom
+                            sx={{
+                                flexGrow: 1,
+                                fontSize: { xs: "5px", sm: "7px", md: "8px" },
+                                width: { xs: "80%", md: "80%" },
+                                padding: "5px 20px",
+                                color: "#FFF",
+                                paddingTop: { xs: "30px", md: "0px" },
+                               
                             }}
                         >
                             <h1>C#</h1>
                         </Typography>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={2} sm={1} md={1}>
                         <Typography
                             variant="subtitle2"
                             component="div"
                             gutterBottom
                             sx={{
                                 flexGrow: 1,
-                                fontSize: { xs: "5px", sm: "7px", md: "10px" },
+                                fontSize: { xs: "5px", sm: "7px", md: "8px" },
                                 width: { xs: "80%", md: "80%" },
                                 padding: "5px 20px",
                                 color: "#FFF",
+                                paddingTop: { xs: "25px", md: "0px" },
+                               
                             }}
                         >
-                            <h1>MY SQL</h1>
+                            <h1>SQL</h1>
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid item xs={2} sm={1} md={1}>
                         <Typography
                             variant="subtitle2"
                             component="div"
                             gutterBottom
                             sx={{
                                 flexGrow: 1,
-                                fontSize: { xs: "5px", sm: "7px", md: "10px" },
+                                fontSize: { xs: "5px", sm: "7px", md: "8px" },
                                 width: { xs: "80%", md: "80%" },
                                 padding: " 20px",
                                 color: "#FFF",
+                                paddingBottom:  { xs: "60px", md: "50px" },
                             }}
                         >
                             <h1>CSS</h1>
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid item xs={10} sm={5} md={5}>
+                <Grid item xs={9} sm={5} md={5}>
                     <Grid>
                         <Paper
                             style={{
@@ -159,8 +174,9 @@ export default function Skill() {
                                 paddingRight: "40px",
                             }}
                         >
-                            <Chart data={data} rotated>
-                                <ArgumentAxis />
+                            <Chart data={data} rotated >
+                                <ArgumentAxis  />
+                                
                                 <ValueAxis
                                     max={7}
                                     showGrid={false}

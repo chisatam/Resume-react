@@ -8,11 +8,11 @@ import Box from '@mui/material/Box';
 
 function Aboutme() {
   return <div>
-      <Grid container display="flex">
-          <Box sx={{height:{xs:"0" , sm:"30vh" , md:"40vh"} }}>
+      <Grid container display="flex" id="About">
+          <Box sx={{height:{xs:"" , sm:"" , md:""} }}>
 
           
-          <Grid item xs={12} sm={12} md={12} style={{}}>
+          <Grid item xs={10} sm={12} md={12} style={{}}  >
               <Grid>
               <Typography
                         variant="subtitle2"
@@ -20,22 +20,22 @@ function Aboutme() {
                         gutterBottom
                         sx={{
                             flexGrow: 1,
-                            fontSize: { xs: "10px", md: "15px" },
-                            width: { xs: "90%", md: "80%" },
-                            padding: "10px 20px",
+                            fontSize: { xs: "10px", md: "10px",lg:"15px" },
+                            width: { xs: "90%" , sm:"80%", md: "80%" },
+                            padding: "10px 40px",
+                            // paddingLeft:"17px",
                             color: "#FFF",
                         }}
                     >
                         <h1>ABOUT</h1>
+                        <h2>CHISANUPONG  TAMPRASIT (First)</h2>
+                        
                         <p>
-                            What is Lorem Ipsum? Lorem Ipsum is simply dummy
-                            text of the printing and typesetting industry. Lorem
-                            Ipsum has been the industry's standard dummy text
-                            ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five
-                            centuries, but also the leap into electronic
-                            typesetting, remaining essentially unchanged. 
+                           
+                        I’m Chisanupong. I graduated in Information Technology from Kasetsart University. 
+                        And has one year experience as a programmer from Metro Systems Company. 
+                        I am looking for a job I can apply my programming skills and 
+                        ability to solve problems related to software development.
                         </p>
                     </Typography>
               </Grid>
@@ -52,19 +52,25 @@ function Aboutme() {
                         gutterBottom
                         sx={{
                             flexGrow: 1,
-                            fontSize: { xs: "10px", md: "15px" },
-                            width: { xs: "80%", md: "80%" },
+                            fontSize: { xs: "10px", md: "10px" ,lg:"15px"},
+                            width: { xs: "80%", md: "70%" },
                             padding: "10px 20px",
                             color: "#FFF",
                         }}
                     >
-                        <h1><WebIcon style={{color:"#FFF" ,paddingLeft:"17px",paddingRight:"10px"}}/>Font End</h1>
+                        <h2><WebIcon style={{color:"#FFF" ,paddingLeft:"17px",paddingRight:"10px"}}/>Font End</h2>
                         <p style={{paddingLeft:"47px"}}>
-                            What is Lorem Ipsum? Lorem Ipsum is simply dummy
-                            text of the printing and typesetting industry. Lorem
-                            Ipsum has been the industry's standard dummy text
-                         
+                        I develop web applications the front end using the following tools and languages.     
                         </p>
+
+                        <p style={{paddingLeft:"47px"}}>
+                        REACT JS , JAVA Script , HTML5 and CSS.
+                        </p>
+                        <p style={{paddingLeft:"47px"}}>
+                        
+                        </p>
+                        
+                        
                     </Typography>
               </Grid>
           </Grid>
@@ -76,19 +82,21 @@ function Aboutme() {
                         gutterBottom
                         sx={{
                             flexGrow: 1,
-                            fontSize: { xs: "10px", md: "15px" },
-                            width: { xs: "80%", md: "80%" },
+                            fontSize: { xs: "10px", md: "10px",lg:"15px" },
+                            width: { xs: "80%", md: "60%" },
                             padding: "10px 20px",
                             color: "#FFF",
                         }}
                     >
-                        <h1><IntegrationInstructionsIcon style={{color:"#FFF" ,paddingLeft:"17px",paddingRight:"10px"}}/>Back End</h1>
+                        <h2><IntegrationInstructionsIcon style={{color:"#FFF" ,paddingLeft:"17px",paddingRight:"10px"}}/>Back End</h2>
                         <p style={{paddingLeft:"47px"}}>
-                            What is Lorem Ipsum? Lorem Ipsum is simply dummy
-                            text of the printing and typesetting industry. Lorem
-                            Ipsum has been the industry's standard dummy text
-                         
+                        I develop a web application using an API to work as a back end.
                         </p>
+                        <p style={{paddingLeft:"47px"}}>
+                        C# .NET CORE ,
+                         My SQL and Docker
+                        </p>
+                        
                     </Typography>
               </Grid>
           </Grid>

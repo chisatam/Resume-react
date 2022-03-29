@@ -9,7 +9,7 @@ export default function Page_EW(props) {
     });
 
     const listItems = props.detail.dicription.map((item) => (
-        <Grid key={item.number} item xs={12} style={{}}>
+        <Grid key={item.number} id={props.id}>
             <Typography
                 variant="subtitle2"
                 component="div"
@@ -28,7 +28,7 @@ export default function Page_EW(props) {
                     // backgroundColor: "rgba(255, 255, 255, 0.07)",
                 }}
             >
-                <h1>{item.headName2}</h1>
+                <h2>{item.headName2}</h2>
                 <p>{item.detail2}</p>
                 <p
                     style={{
@@ -46,12 +46,13 @@ export default function Page_EW(props) {
 
     return (
         <div>
-            <Grid
-                container
+            <Grid 
                 display="flex"
+                flexWrap="wrap"
+                justifyContent="center"
                 style={{ backgroundColor: "#1D2934", padding: "30px" }}
             >
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={5}>
                     <Typography
                         variant="subtitle2"
                         component="div"
@@ -74,24 +75,12 @@ export default function Page_EW(props) {
                         <p>{props.detail.detail}</p>
                     </Typography>
                 </Grid>
-                <Grid
-                    container
-                    display="flex"
-                    xs={12}
-                    md={6}
-                    style={{ paddingTop: "60px" }}
-                >
-                    {listItems}
-                    {/* <Grid item xs={12}  style={{backgroundColor:"red"}}>
-                        test1
+               
+                    <Grid item xs={12} md={5} style={{paddingTop:"5%"}}>
+                        {listItems}
                     </Grid>
-                    <Grid item xs={12}  style={{backgroundColor:"yellow"}}>
-                        test2
-                    </Grid>
-                    <Grid item xs={12}  style={{backgroundColor:"pink"}}>
-                        test3
-                    </Grid> */}
-                </Grid>
+                    
+               
             </Grid>
         </div>
     );

@@ -3,69 +3,52 @@ import Grid from "@mui/material/Grid";
 import "../css/mainResume.css";
 import ActionAreaCard from "./ActionAreaCard";
 import Videobackground from "./Videobackground";
-import TypographyNew from "./Typography";
+import TypographyNew from "./TypographyNew";
 import Typography from "@mui/material/Typography";
-import Profile from "../img/profile1.jpg";
+import Profile from "../img/profile.jpg";
 import Aboutme from "./Aboutme";
 import Skill from "./Skill";
 import { Button } from "@mui/material";
 import Dowloadfile from "./Dowloadfile";
-import MyEucatuin from "./Page_EW";
+import MyEducation from "./Page_EW";
 import Experience from "./Page_EW";
+import SkillTest from "./SkillTest";
+import Contact from "./contact";
+import ImageListcert from "./ImageLiscert"
 
 function mainResume() {
     const detail1 = {
         headName: "WORK EXPERIENCE",
-        detail: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of readable English. Many desktop publishing",
+        detail: "The work experience written here is all that I have been through since I started working.",
 
         dicription: [
             {
-                headName2: "JUNIOR PROGRAMER",
+                headName2: "NATIONAL CENTRAL UNIVERSITY IN TAIWAN (Trainee)",
                 detail2:
-                    "Lorem Ipsum is simply dummy text of the printing and" +
-                    " typesetting industry. Lorem Ipsum has been the",
-                number: 1,
-                unit: "Years",
+                    "Develop a face recognition application as program for face recognition in classroom.",
+                number: 4,
+                unit: "Month",
             },
             {
-                headName2: "INTERNET OF THING",
+                headName2: "METRO SYSTEMS CORPORATION PUBLIC COMPANY LIMITED",
                 detail2:
-                    "industry's standard dummy text ever since the 1500s" +
-                    "when an unknown printer took a galley of type and" +
-                    "  scrambled it to make a type specimen book. It has",
-                number: 2,
+                    "Develop web applications for Hitachi.Front-end react, Back-end C# .net core ",
+                number: 1,
                 unit: "Years",
             },
         ],
     };
     const detail2 = {
-        headName: "MY EDUCATIN",
-        detail: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of readable English. Many desktop publishing",
+        headName: "EDUCATION",
+        detail: "My educational background from bachelor's degree onwards",
 
         dicription: [
             {
-                headName2: "GRAPHIC DESIGN",
+                headName2: "Information Technology",
                 detail2:
-                    "Lorem Ipsum is simply dummy text of the printing and" +
-                    " typesetting industry. Lorem Ipsum has been the",
-                number: 4.5,
-                unit: "GPA",
-            },
-            {
-                headName2: "CIT DIPLOMA",
-                detail2:
-                    "industry's standard dummy text ever since the 1500s" +
-                    "when an unknown printer took a galley of type and" +
-                    "  scrambled it to make a type specimen book. It has",
-                number: 3,
-                unit: "GPA",
-            },
-            {
-                headName2: "LEAD WEB",
-                detail2:
-                    " It is a long established fact that a reader will be" +
-                    "distracted by the readable content of a page when",
-                number: 2.89,
+                    "BSc.in Information Technology, Kasetsart " +
+                    "University Sirachar Campus",
+                number: 2.82,
                 unit: "GPA",
             },
         ],
@@ -118,7 +101,7 @@ function mainResume() {
                         gutterBottom
                         sx={{
                             flexGrow: 1,
-                            fontSize: { xs: "10px", md: "15px" },
+                            fontSize: { xs: "10px", md: "10px",lg:"15px" },
                             width: { xs: "80%", md: "80%" },
                             padding: "10px 20px",
                             margin: {
@@ -126,18 +109,13 @@ function mainResume() {
                                 sm: "15px auto",
                                 md: "60px auto",
                             },
-                            backgroundColor: "rgba(255, 255, 255, 0.07)",
+                            backgroundColor: "#1D2934"
                         }}
                     >
-                        <h1>VALUES</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries,
-                        </p>
+                        <h1>DESIRED JOB ROLE</h1>
+                        <p>Full stack developer</p>
+                        <p>Programmer</p>
+                        <p style={{ color: "#131A21" }}>.</p>
                     </Typography>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
@@ -147,26 +125,21 @@ function mainResume() {
                         gutterBottom
                         sx={{
                             flexGrow: 1,
-                            fontSize: { xs: "10px", md: "15px" },
-                            width: { xs: "80%", md: "80%" },
+                            fontSize: { xs: "10px", md: "10px",lg:"15px" },
+                            width: { xs: "80%", md: "90%" },
                             padding: "10px 20px",
                             margin: {
                                 xs: "15px auto",
                                 sm: "15px auto",
                                 md: "60px auto",
                             },
-                            backgroundColor: "rgba(255, 255, 255, 0.07)",
+                            backgroundColor: "#1D2934"
                         }}
                     >
                         <h1>GOALS</h1>
-                        <p>
-                            It is a long established fact that a reader will be
-                            distracted by the readable content of a page when
-                            looking at its layout. The point of using Lorem
-                            Ipsum is that it has a more-or-less normal
-                            distribution of letters, as opposed to using
-                            'Content here, content here', making it look like
-                        </p>
+                        <p>Develop your own potential.</p>
+                        <p>learn new things to develop one's potential</p>
+                        <p>Can fix the problem.</p>
                     </Typography>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
@@ -176,7 +149,7 @@ function mainResume() {
                         gutterBottom
                         sx={{
                             flexGrow: 1,
-                            fontSize: { xs: "10px", md: "15px" },
+                            fontSize: { xs: "10px", md: "10px",lg:"15px" },
                             width: { xs: "80%", md: "80%" },
                             padding: "10px 20px",
                             margin: {
@@ -184,18 +157,13 @@ function mainResume() {
                                 sm: "15px auto",
                                 md: "60px auto",
                             },
-                            backgroundColor: "rgba(255, 255, 255, 0.07)",
+                            backgroundColor: "#1D2934"
                         }}
                     >
                         <h1>HOBBIES</h1>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
-                            in some form, by injected humour, or randomised
-                            words which don't look even slightly believable. If
-                            you are going to use a passage of readable English.
-                            Many desktop publishing
-                        </p>
+                        <p>Read books about innovation</p>
+                        <p>Trade cryptocurrency</p>
+                        <p>Study general knowledge</p>
                     </Typography>
                 </Grid>
             </Grid>
@@ -206,14 +174,14 @@ function mainResume() {
                 display="flex"
                 style={{ backgroundColor: "#131A21" }}
             >
-                <Grid item xs={12} sm={5} md={4} style={{}}>
-                    <Grid style={{}}>
+                <Grid item xs={12} sm={5} md={3} style={{}}>
+                    <Grid style={{ margin: "0px 40px" }}>
                         <img
                             src={Profile}
                             alt="profile"
                             style={{
                                 width: "100%",
-                                height: "77vh",
+                                height: "auto",
                                 // height: "80vh",
                                 // margin: "0 20px",
                                 // alignItems: "center",
@@ -227,9 +195,9 @@ function mainResume() {
                     xs={12}
                     sm={7}
                     md={8}
-                    style={{ backgroundColor: "rgba(255, 255, 255, 0.07)" }}
+                    style={{ backgroundColor: "#1D2934" }}
                 >
-                    <Aboutme></Aboutme>
+                    <Aboutme id="About"></Aboutme>
                 </Grid>
             </Grid>
             {/* MY SKILLS */}
@@ -238,26 +206,40 @@ function mainResume() {
                 display="flex"
                 style={{ backgroundColor: "#131A21", padding: "30px 0" }}
             >
+                {/* <SkillTest></SkillTest> */}
                 <Skill></Skill>
             </Grid>
 
             {/*Dowload file Resume */}
-            <Grid>
+            <Grid style={{ backgroundColor: "#1D2934" }}>
                 <Dowloadfile></Dowloadfile>
             </Grid>
-
+            {/* Line */}
+            <Grid style={{ backgroundColor: "#131A21" }}>.</Grid>
             {/* Education */}
-            <Grid>
-                <MyEucatuin detail={detail2}></MyEucatuin>
+            <Grid style={{ backgroundColor: "#131A21" }}>
+                <MyEducation detail={detail2} id="Education"></MyEducation>
             </Grid>
 
             {/* Line */}
             <Grid style={{ backgroundColor: "#131A21" }}>.</Grid>
 
             {/* Experience */}
-            <Grid>
-                <Experience detail={detail1}></Experience>
+            <Grid style={{ backgroundColor: "#131A21" }}>
+                <Experience detail={detail1} id="Experience"></Experience>
             </Grid>
+             {/* Line */}
+             <Grid style={{ backgroundColor: "#131A21" }}>.</Grid>
+             {/* Imagelistcert */}
+             <Grid >
+                <ImageListcert></ImageListcert>
+            </Grid>
+            {/* Contact */}
+            <Grid>
+                <Contact></Contact>
+            </Grid>
+           
+
         </div>
     );
 }
